@@ -48,12 +48,12 @@ pub mod queue;
 pub mod webhook;
 pub mod plugin;
 
-mod util;
+mod utils;
 
 pub use broker::{Broker, Topic, Subscription};
 pub use log::{CommitLog, Offset, Record, SegmentConfig};
 pub use queue::{JobQueue, Job, JobId, JobState};
 pub use webhook::{WebhookDispatcher, Endpoint, DeliveryPolicy};
-pub use util::error::{Error, Result};
+pub use utils::error::{Error, Result};
 
 pub use crate::net::config::Config;
